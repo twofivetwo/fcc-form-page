@@ -1,0 +1,75 @@
+/* styles all element borders */
+/* * {
+    border: 5px solid greenyellow;
+} */
+
+/* sets a full screen background should work in most browsers */
+html {
+    background: url(../form-page/images/background-1-b&w.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border: none;
+    overflow-x: hidden;
+}
+
+body {
+    border: none;
+}
+
+main {
+    border: none;
+}
+ 
+/* Uses flex to center everything inside this div. */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* A second div that defines the maximum width the form nested within it can consume. Without this container the form either completely fills the first container or when flex is applied to the form and a width is set it becomes unresponsive. */
+.form-background {
+    width: 650px;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 30px;
+    padding: 20px 20px 20px 20px;
+    background-color: rgba(110, 110, 110, .85);
+}
+
+/* Use flex again to center and align the form content.  */
+form {
+    border: 5px solid rgba(224, 24, 24, 0.5); 
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+input[type=text], input[type=number], input[type=email], select, textarea {
+    border: 1px solid rgb(0, 0, 0);
+    display: inline-block;
+    resize: vertical;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+#title  {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 75px;
+    background: rgba(175, 175, 175, .85);
+    border: none;
+    margin: 5% -10% 0% -10%;
+}
+
+#description {
+    font-family: 'Open Sans Condensed' sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    background: rgba(175, 175, 175, .84);
+    margin: 1% -10% 3% -10%;
+}
